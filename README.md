@@ -97,3 +97,13 @@ Bash
 terraform destroy -auto-approve
 
 
+
+## Portfolio Roadmap
+
+This repository serves as the core networking baseline within an enterprise AWS portfolio series:
+
+* **`aws-vpc-networking-project`** (Current) — Multi-tier VPC topology, private subnet isolation, NAT Gateway egress, zero-SSH SSM management, and VPC Flow Logs.
+* **`aws-ecs-alb-microservices`** (Next) — High-availability containerized application tier with Application Load Balancers, ECS Fargate, and multi-AZ deployments.
+* **`aws-serverless-event-driven`** (Upcoming) — Asynchronous event-driven architecture using API Gateway, AWS Lambda, DynamoDB, and SQS.
+
+
