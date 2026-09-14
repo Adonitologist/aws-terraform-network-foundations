@@ -12,13 +12,13 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout Repository
+      - name: Checkout Code
         uses: actions/checkout@v4
 
       - name: Setup Terraform
         uses: hashicorp/setup-terraform@v3
         with:
-          terraform_version: "1.5.0"
+          terraform_version: 1.5.7
 
       - name: Terraform Format Check
         run: terraform fmt -check
@@ -29,7 +29,18 @@ jobs:
       - name: Terraform Validate
         run: terraform validate
 
-      - name: Run tfsec (Static Security Analysis)
-        uses: aquasecurity/tfsec-action@v1.0.3
+      - name: Setup TFLint
+        uses: terraform-linters/setup-tflint@v4
         with:
-          soft_fail: true
+          tflint_version: v0.50.0
+
+      - name: Init TFLint
+        run: tflint --init
+
+      - name: Run TFLint
+        run: tflint -f compact
+
+      - name: tfsec Security Scan
+        uses: aquasecurity/tfsec-action@v1.0.0
+        with:
+          soft_fail: false
