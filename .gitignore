@@ -1,0 +1,6 @@
+# Ignorar directorio de inicialización y archivos de estado
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfvars.json
+.terraform.lock.hcl
