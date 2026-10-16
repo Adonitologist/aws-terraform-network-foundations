@@ -65,7 +65,7 @@ aws-vpc-networking-project/
 ├── outputs.tf                     # Infrastructure output attributes
 ├── providers.tf                   # AWS provider and default resource tags
 ├── README.md                      # Project documentation
-├── terraform.tfvars               # Infrastructure variable values
+├── terraform.tfvars.example       # Infrastructure variable values
 └── variables.tf                   # Input variable declarations
 
 Quickstart Guide
