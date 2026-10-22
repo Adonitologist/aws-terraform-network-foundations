@@ -1,6 +1,6 @@
 # AWS VPC Networking with Terraform
 
-![Terraform CI](https://github.com/Adonitologist/aws-vpc-networking-project/actions/workflows/terraform-ci.yml/badge.svg)
+![Terraform CI](https://github.com/Adonitologist/aws-terraform-network-foundations/actions/workflows/terraform-ci.yml/badge.svg)
 ![Terraform](https://img.shields.io/badge/Terraform->=1.5.0-623CE4?logo=terraform)
 ![AWS Provider](https://img.shields.io/badge/AWS_Provider-~>5.0-FF9900?logo=amazon-aws)
 
@@ -162,4 +162,4 @@ One workflow (`.github/workflows/terraform-ci.yml`): `terraform fmt -check`, `in
 -backend=false`, `validate` and `tflint` for the module and each example, `tfsec`, and
 `pytest`. It has no apply job and uses no AWS credentials.
 
-CI (fmt, validate and tflint per directory, tfsec, pytest on Python 3.12) passed on `main` on 2026-10-22: [run 39769215380](https://github.com/Adonitologist/aws-vpc-networking-project/actions/runs/39769215380).
+CI (fmt, validate and tflint per directory, tfsec, pytest on Python 3.12) passed on `main` on 2026-10-22: [run 39769215380](https://github.com/Adonitologist/aws-terraform-network-foundations/actions/runs/39769215380).
