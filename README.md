@@ -161,3 +161,5 @@ Four rules are ignored, each on the resource it applies to:
 One workflow (`.github/workflows/terraform-ci.yml`): `terraform fmt -check`, `init
 -backend=false`, `validate` and `tflint` for the module and each example, `tfsec`, and
 `pytest`. It has no apply job and uses no AWS credentials.
+
+CI (fmt, validate and tflint per directory, tfsec, pytest on Python 3.12) passed on `main` on 2026-10-22: [run 39769215380](https://github.com/Adonitologist/aws-vpc-networking-project/actions/runs/39769215380).
