@@ -111,17 +111,24 @@ Destroy:
 ## Architecture
 
 ```mermaid
+flowchart TD
+    Internet((Internet))
+    IGW[Internet Gateway]
 
-Internet
-   |
-   +--> [Internet Gateway]
-           |
-   public subnets (AZ a, AZ b)      ALB (alb-asg example only)
-           |                             |
-      [NAT gateway, AZ a only]           v
-           ^                        private subnets (AZ a, AZ b)
-           |                             |
-           +----- outbound ------ instances (no public IP)
+    subgraph Public["Public subnets (AZ a, AZ b)"]
+        ALB["ALB (alb-asg example only)"]
+        NAT["NAT gateway (AZ a only)"]
+    end
+
+    subgraph Private["Private subnets (AZ a, AZ b)"]
+        EC2["Instances (no public IP)"]
+    end
+
+    Internet --> IGW
+    IGW --> ALB
+    ALB --> EC2
+    EC2 -->|outbound| NAT
+    NAT --> IGW
 ```
 
 ## Usage
