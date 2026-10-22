@@ -110,7 +110,8 @@ Destroy:
 
 ## Architecture
 
-```text
+```mermaid
+
 Internet
    |
    +--> [Internet Gateway]
