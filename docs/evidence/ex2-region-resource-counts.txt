@@ -1,0 +1,2 @@
+live instances in region: 2
+volumes in region: 2

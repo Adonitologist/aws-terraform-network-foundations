@@ -1,0 +1,10 @@
+[
+    {
+        "Id": "fl-REDACTED-1",
+        "Status": "ACTIVE",
+        "Traffic": "ALL",
+        "Destination": "cloud-watch-logs",
+        "Group": "/aws/vpc/ssm-private-ec2-flow-logs",
+        "Delivery": "SUCCESS"
+    }
+]

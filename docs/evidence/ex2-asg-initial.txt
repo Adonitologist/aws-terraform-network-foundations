@@ -1,0 +1,25 @@
+[
+    {
+        "Min": 2,
+        "Desired": 2,
+        "Max": 3,
+        "Zones": [
+            "us-east-1a",
+            "us-east-1b"
+        ],
+        "Instances": [
+            {
+                "Id": "i-REDACTED-2",
+                "Zone": "us-east-1a",
+                "Health": "Healthy",
+                "State": "InService"
+            },
+            {
+                "Id": "i-REDACTED-3",
+                "Zone": "us-east-1b",
+                "Health": "Healthy",
+                "State": "InService"
+            }
+        ]
+    }
+]

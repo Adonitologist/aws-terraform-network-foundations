@@ -1,0 +1,5 @@
+instance i-REDACTED-4 missing: CostCenter
+instance i-REDACTED-3 missing: CostCenter
+volume vol-REDACTED-2 missing: CostCenter
+volume vol-REDACTED-3 missing: CostCenter
+exit code: 1

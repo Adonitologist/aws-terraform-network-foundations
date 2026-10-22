@@ -1,0 +1,6 @@
+[
+    {
+        "Group": "/aws/vpc/ssm-private-ec2-flow-logs",
+        "RetentionDays": 7
+    }
+]

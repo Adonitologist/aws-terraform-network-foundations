@@ -1,0 +1,22 @@
+[
+    {
+        "Status": "Successful",
+        "Description": "Launching a new EC2 instance: i-REDACTED-4",
+        "Cause": "At 2026-10-22T10:50:51Z an instance was started in response to a difference between desired and actual capacity, increasing the capacity from 1 to 2."
+    },
+    {
+        "Status": "Successful",
+        "Description": "Terminating EC2 instance: i-REDACTED-2",
+        "Cause": "At 2026-10-22T10:50:46Z instance i-REDACTED-2 was taken out of service in response to a user request."
+    },
+    {
+        "Status": "Successful",
+        "Description": "Launching a new EC2 instance: i-REDACTED-3",
+        "Cause": "At 2026-10-22T10:46:59Z a user request created an AutoScalingGroup changing the desired capacity from 0 to 2.  At 2026-10-22T10:47:02Z an instance was started in response to a difference between desired and actual capacity, increasing the capacity from 0 to 2."
+    },
+    {
+        "Status": "Successful",
+        "Description": "Launching a new EC2 instance: i-REDACTED-2",
+        "Cause": "At 2026-10-22T10:46:59Z a user request created an AutoScalingGroup changing the desired capacity from 0 to 2.  At 2026-10-22T10:47:02Z an instance was started in response to a difference between desired and actual capacity, increasing the capacity from 0 to 2."
+    }
+]

@@ -1,0 +1,29 @@
+[
+    {
+        "Instance": "i-REDACTED-1",
+        "Type": "t3.micro",
+        "PublicIp": null,
+        "HttpTokens": "required",
+        "Profile": "arn:aws:iam::111111111111:instance-profile/ssm-private-ec2-ec2-ssm-profile"
+    }
+]
+[
+    {
+        "Volume": "vol-REDACTED-1",
+        "Type": "gp3",
+        "Encrypted": true
+    }
+]
+[
+    {
+        "Group": "sg-REDACTED-1",
+        "Inbound": [],
+        "Outbound": [
+            {
+                "Proto": "tcp",
+                "From": 443,
+                "To": 443
+            }
+        ]
+    }
+]

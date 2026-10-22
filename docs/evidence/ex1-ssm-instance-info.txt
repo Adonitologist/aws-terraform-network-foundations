@@ -1,0 +1,7 @@
+[
+    {
+        "Instance": "i-REDACTED-1",
+        "Ping": "Online",
+        "Platform": "Amazon Linux"
+    }
+]

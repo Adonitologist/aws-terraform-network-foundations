@@ -1,0 +1,10 @@
+instance-id=i-REDACTED-2 az=us-east-1a
+instance-id=i-REDACTED-3 az=us-east-1b
+instance-id=i-REDACTED-2 az=us-east-1a
+instance-id=i-REDACTED-3 az=us-east-1b
+instance-id=i-REDACTED-3 az=us-east-1b
+instance-id=i-REDACTED-2 az=us-east-1a
+instance-id=i-REDACTED-3 az=us-east-1b
+instance-id=i-REDACTED-2 az=us-east-1a
+instance-id=i-REDACTED-2 az=us-east-1a
+instance-id=i-REDACTED-3 az=us-east-1b

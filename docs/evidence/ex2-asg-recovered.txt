@@ -1,0 +1,19 @@
+[
+    {
+        "Desired": 2,
+        "Instances": [
+            {
+                "Id": "i-REDACTED-4",
+                "Zone": "us-east-1a",
+                "Health": "Healthy",
+                "State": "InService"
+            },
+            {
+                "Id": "i-REDACTED-3",
+                "Zone": "us-east-1b",
+                "Health": "Healthy",
+                "State": "InService"
+            }
+        ]
+    }
+]

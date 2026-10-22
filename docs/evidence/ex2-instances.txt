@@ -1,0 +1,12 @@
+[
+    {
+        "Instance": "i-REDACTED-4",
+        "PublicIp": null,
+        "HttpTokens": "required"
+    },
+    {
+        "Instance": "i-REDACTED-3",
+        "PublicIp": null,
+        "HttpTokens": "required"
+    }
+]

@@ -1,0 +1,15 @@
+2026-10-22T11:01:45.7427315Z
+--- project alb-asg
+vpcs: none
+nat-gateways: none
+elastic-ips: none
+load-balancers: none
+target-groups: none
+autoscaling-groups: none
+launch-templates: none
+instances: none
+volumes: none
+log-groups: none
+iam-roles: none
+instance-profiles: none
+RESULT: nothing left

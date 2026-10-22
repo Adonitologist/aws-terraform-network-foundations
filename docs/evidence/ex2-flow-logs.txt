@@ -1,0 +1,9 @@
+[
+    {
+        "Id": "fl-REDACTED-2",
+        "Status": "ACTIVE",
+        "Traffic": "ALL",
+        "Group": "/aws/vpc/alb-asg-flow-logs",
+        "Delivery": "SUCCESS"
+    }
+]
