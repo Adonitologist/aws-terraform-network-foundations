@@ -1,0 +1,5 @@
+# Replace with your own public IP in /32 form. 203.0.113.1 is a documentation address.
+allowed_ingress_cidrs = ["203.0.113.1/32"]
+aws_region            = "us-east-1"
+project               = "alb-asg"
+environment           = "dev"

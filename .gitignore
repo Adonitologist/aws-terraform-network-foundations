@@ -1,8 +1,23 @@
-# Ignorar directorio de inicialización y archivos de estado
+# Terraform local state and working directories
 .terraform/
 *.tfstate
 *.tfstate.*
+
+# Terraform plan files (can hold account ids and ARNs)
+tfplan
+*.tfplan
+
+# Local variable values (only *.tfvars.example is tracked)
+*.tfvars
 *.tfvars.json
-.terraform.lock.hcl
-# Valores locales de variables
-terraform.tfvars
+
+# Raw command output is never committed (redacted copies go in docs/evidence)
+docs/evidence-raw/
+
+# Python
+.venv/
+__pycache__/
+.pytest_cache/
+
+# Read-only copy of a second repository, never committed
+import-src/

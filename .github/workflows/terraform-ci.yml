@@ -1,4 +1,4 @@
-name: "Terraform Quality & Security CI"
+name: "Terraform CI"
 
 on:
   push:
@@ -6,10 +6,20 @@ on:
   pull_request:
     branches: [ "main" ]
 
+permissions:
+  contents: read
+
 jobs:
-  terraform-ci:
-    name: "Lint, Validate & Security Scan"
+  terraform:
+    name: "Terraform (${{ matrix.dir }})"
     runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        dir: [ "modules/vpc", "examples/ssm-private-ec2", "examples/alb-asg" ]
+    defaults:
+      run:
+        working-directory: ${{ matrix.dir }}
 
     steps:
       - name: Checkout Code
@@ -34,13 +44,35 @@ jobs:
         with:
           tflint_version: v0.50.0
 
-      - name: Init TFLint
-        run: tflint --init
-
       - name: Run TFLint
         run: tflint -f compact
 
+  tfsec:
+    name: "tfsec"
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
       - name: tfsec Security Scan
         uses: aquasecurity/tfsec-action@v1.0.0
+
+  pytest:
+    name: "pytest"
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
         with:
-          soft_fail: false
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run tests
+        run: python -m pytest

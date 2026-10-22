@@ -1,5 +1,6 @@
 terraform {
   required_version = ">= 1.5.0"
+
   required_providers {
     aws = {
       source  = "hashicorp/aws"
@@ -13,7 +14,7 @@ provider "aws" {
 
   default_tags {
     tags = {
-      Project     = "Enterprise VPC Networking"
+      Project     = var.project
       Environment = var.environment
       ManagedBy   = "Terraform"
       Owner       = "Adonitologist"
